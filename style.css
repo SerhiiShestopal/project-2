@@ -184,23 +184,26 @@ input::placeholder {
 }
 
 @media (max-width:320px) {
-
-    .header, .slider {
-        width: 320px;
+    .container {
+        width: 100%;
     }
-    
+
+   
     .header-flex {
         flex-direction: column;
     }
-    .logo {
+
+    [class*="col-"] {
         width: 100%;
+    }
+    .logo {
+        
         text-align: center;
     }
-
-    .menu {
-        width: 100%;
+    .nav {
         overflow-x: scroll;
     }
+    
 
     .block-search {
         visibility: hidden;
